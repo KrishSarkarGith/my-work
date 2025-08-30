@@ -1,79 +1,51 @@
-/* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-/* Global styles */
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  background: linear-gradient(to bottom right, #e0e7ff, #ffffff, #ede9fe);
-  scroll-behavior: smooth;
-}
 
-header, footer {
-  text-align: center;
-  padding: 1rem;
-}
+/* Inter Font - Modern typography like Cursor */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
+/* CSS Variables for consistent theming */
+:root {
+  /* Font and color variables for Cursor-like modern UI */
+  --font-family: 'Inter', system-ui, sans-serif;
+  --font-size-base: 16px;
+  --font-size-sm: 14px;
+  --font-size-lg: 20px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
 
-button {
-  cursor: pointer;
-  padding: 0.5rem 1.2rem;
-  border-radius: 1rem;
-  border: none;
-  background: linear-gradient(to right, #7c3aed, #06b6d4);
-  color: white;
-  font-weight: 600;
-  transition: opacity 0.3s;
-}
+  --color-bg: #0a0a0a;
+  --color-bg-secondary: #18181b;
+  --color-surface: #232329;
+  --color-surface-hover: #2a2a31;
+  --color-border: #232329;
+  --color-border-light: #35353b;
+  --color-primary: #6366f1;
+  --color-primary-hover: #818cf8;
+  --color-accent: #f472b6;
+  --color-text: #f4f4f5;
+  --color-text-secondary: #a1a1aa;
+  --color-disabled: #52525b;
+  --color-success: #22c55e;
+  --color-danger: #ef4444;
+  --color-warning: #facc15;
+  --color-shadow: rgba(0,0,0,0.12);
 
-button:hover {
-  opacity: 0.85;
-}
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
 
-/* Card */
-.card {
-  background: white;
-  border-radius: 1.5rem;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  padding: 1.5rem;
-  margin: 1rem 0;
-}
+  --transition: 0.18s cubic-bezier(.4,0,.2,1);
 
-/* Quiz Modal */
-.quiz-modal {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-}
+  --input-bg: #18181b;
+  --input-border: #232329;
+  --input-focus: #6366f1;
+  --input-placeholder: #71717a;
 
-.quiz-modal-content {
-  background: white;
-  border-radius: 1.5rem;
-  padding: 2rem;
-  max-width: 600px;
-  width: 100%;
-}
-
-/* Progress Bar */
-.progress-bar {
-  height: 0.5rem;
-  background: #c7d2fe;
-  border-radius: 0.25rem;
-  overflow: hidden;
-}
-
-.progress-fill {
-  height: 100%;
-  background: linear-gradient(to right, #7c3aed, #06b6d4);
-  transition: width 0.3s ease;
+  --chip-bg: #232329;
+  --chip-bg-selected: #6366f1;
+  --chip-text: #f4f4f5;
+  --chip-text-selected: #fff;
+  --chip-border: #35353b;
+  --chip-radius: 999px;
 }
