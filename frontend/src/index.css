@@ -1,0 +1,73 @@
+/* =========================
+   Google Font Import
+   Must come first
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* =========================
+   Tailwind Directives
+========================= */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================
+   Global Styles
+========================= */
+body {
+  @apply min-h-screen;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  background: linear-gradient(to bottom right, #e0e7ff, #ffffff, #ede9fe);
+}
+
+/* =========================
+   Hero Section
+========================= */
+.hero-section {
+  background-image: url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1920&q=80");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* =========================
+   Card Base (without opacity)
+========================= */
+.card {
+  @apply rounded-2xl shadow-xl p-6 transition-transform transform hover:scale-105;
+}
+
+/* =========================
+   Button Styles
+========================= */
+.btn-primary {
+  @apply bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold py-2 px-6 rounded-full shadow-lg hover:opacity-90 transition duration-300;
+}
+
+/* =========================
+   Quiz Modal Base
+========================= */
+.quiz-modal {
+  @apply rounded-2xl shadow-2xl p-8;
+}
+
+/* =========================
+   Progress Bar
+========================= */
+.progress-bar {
+  @apply h-2 bg-indigo-300 rounded-full overflow-hidden;
+}
+
+.progress-fill {
+  @apply h-full bg-gradient-to-r from-indigo-500 to-purple-600 transition-all duration-500;
+}
