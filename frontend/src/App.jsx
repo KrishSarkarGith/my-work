@@ -1,7 +1,8 @@
 
 import React, { useState } from 'react'
-import Quiz from './components/Quiz.jsx'
+import AssessmentQuiz from './components/AssessmentQuiz.jsx'
 import Dashboard from './components/Dashboard.jsx'
+import './components/AssessmentQuiz.css'
 
 export default function App() {
   const [result, setResult] = useState(null)
@@ -23,7 +24,7 @@ export default function App() {
         <div className="container">
           {!result ? (
             <div className="card">
-              <Quiz onDone={setResult} />
+              <AssessmentQuiz onDone={setResult} />
             </div>
           ) : (
             <Dashboard data={result} onReset={() => setResult(null)} />
